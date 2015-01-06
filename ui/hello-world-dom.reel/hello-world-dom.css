@@ -1,3 +1,12 @@
 .HelloWorldDom {
+    font-size:large;
+    text-align: center;
+}
 
+.HelloWorldDom-left {
+    text-align:left;
+}
+
+.HelloWorldDom-left {
+    text-align:right;
 }
