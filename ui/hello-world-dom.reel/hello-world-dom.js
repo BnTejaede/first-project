@@ -21,8 +21,8 @@ exports.HelloWorldDom = Component.specialize(/** @lends HelloWorldDom# */ {
             var div = document.createElement("div");
             div.textContent = "Hello, World!";
             fragment.appendChild(div);
-            fragement.appendChild(div.cloneNode(true));
-            fragement.appendChild(div.cloneNode(true));
+            fragment.appendChild(div.cloneNode(true));
+            fragment.appendChild(div.cloneNode(true));
             fragment.firstChild.classList.add("HelloWorldDom-left");
             fragment.firstChild.classList.add("HelloWorldDom-right");
             this.element.appendChild(fragment);
