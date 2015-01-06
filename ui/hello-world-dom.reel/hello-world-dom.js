@@ -24,7 +24,7 @@ exports.HelloWorldDom = Component.specialize(/** @lends HelloWorldDom# */ {
             fragment.appendChild(div.cloneNode(true));
             fragment.appendChild(div.cloneNode(true));
             fragment.firstChild.classList.add("HelloWorldDom-left");
-            fragment.firstChild.classList.add("HelloWorldDom-right");
+            fragment.lastChild.classList.add("HelloWorldDom-right");
             this.element.appendChild(fragment);
         }
     }
