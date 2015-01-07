@@ -19,7 +19,14 @@
                 "element": {"#": "decrement"},
                 "enabled": true,
                 "label": "-"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "increment": {
             "prototype": "digit/ui/button.reel",
@@ -27,7 +34,14 @@
                 "element": {"#": "increment"},
                 "enabled": true,
                 "label": "+"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "value": {
             "prototype": "digit/ui/text.reel",
@@ -41,7 +55,9 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-
+        <button data-montage-id="decrement"></button>
+        <button data-montage-id="increment"></button>
+        <p data-montage-id="value"></p>
     </div>
 </body>
 </html>

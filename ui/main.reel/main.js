@@ -16,5 +16,16 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     defaultValue: { 
         value:"World"
+    },
+
+    handleIncrementAction: {
+        value: function (event) {
+        }
+    },
+
+    handleDecrementAction: {
+        value: function (event) {
+        }
     }
+
 });
