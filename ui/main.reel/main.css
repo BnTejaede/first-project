@@ -2,5 +2,7 @@
 }
 
 .increment .decrement .value {
-    float:left;
+    display: inline-block;
 }
+
+
