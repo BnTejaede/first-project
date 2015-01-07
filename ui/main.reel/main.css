@@ -1,8 +1,15 @@
 .Main {
 }
 
-.increment .decrement .value {
+.increment {
     display: inline-block;
 }
 
+.decrement { 
+    display: inline-block;
+}
+
+.value {
+    display: inline-block;
+}
 
