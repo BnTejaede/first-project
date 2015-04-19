@@ -20,7 +20,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 {index:3,name:"Cell 4"},
                 {index:4,name:"Cell 5"},
                 ];
-            this.rangeController = RangeController.
+            this.rangeController = new RangeController().initWithContent(arrayForRangeController);
         }
     },
     handleIncrementAction: {
