@@ -28,6 +28,57 @@
                 }
             ]
         },
+        "flow": {
+            "prototype": "montage/ui/flow.reel",
+            "properties": {
+                "element": {"#": "flow"},
+                "cameraPosition": [
+                    0,
+                    0,
+                    1500
+                ],
+                "paths": [
+                    {
+                        "knots": [
+                            {
+                                "knotPosition": [
+                                    -2400,
+                                    0,
+                                    -1
+                                ],
+                                "nextHandlerPosition": [
+                                    -800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            },
+                            {
+                                "knotPosition": [
+                                    2400,
+                                    0,
+                                    -1
+                                ],
+                                "previousHandlerPosition": [
+                                    800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            }
+                        ],
+                        "headOffset": 0,
+                        "tailOffset": 0,
+                        "units": {}
+                    }
+                ]
+            },
+            "bindings": {
+                "contentController": {"<-": "@owner.rangeController"}
+            }
+        },
         "increment": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -42,6 +93,9 @@
                     "listener": {"@": "owner"}
                 }
             ]
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller"
         },
         "value": {
             "prototype": "digit/ui/text.reel",
@@ -58,6 +112,9 @@
         <button data-montage-id="decrement" class="decrement"></button>
         <p data-montage-id="value" class="value"></p>
         <button data-montage-id="increment" class="increment"></button>
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+            <div></div>
+        </div>
     </div>
 </body>
 </html>
