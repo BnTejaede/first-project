@@ -68,8 +68,8 @@
                                 "nextDensity": 10,
                                 "previousDensity": 10,
                                 "knotPosition": [
-                                    -2400,
-                                    0,
+                                    -5.087802104717866,
+                                    -713.7392512224643,
                                     -1
                                 ],
                                 "rotateX": 0,
@@ -77,21 +77,25 @@
                                 "rotateZ": 0,
                                 "opacity": 1,
                                 "nextHandlerPosition": [
-                                    -800,
-                                    0,
+                                    -6.782717358955779,
+                                    618.4641386080444,
                                     -1
                                 ]
                             },
                             {
                                 "knotPosition": [
-                                    2400,
-                                    0,
+                                    -4.547473508864641e-13,
+                                    1215.2542372881358,
                                     -1
                                 ],
-                                "nextHandlerPosition": [],
-                                "previousHandlerPosition": [
-                                    800,
+                                "nextHandlerPosition": [
                                     0,
+                                    50.8474576271185,
+                                    0
+                                ],
+                                "previousHandlerPosition": [
+                                    -3.3898305084749154,
+                                    50.8474576271185,
                                     -1
                                 ],
                                 "nextDensity": 10,
@@ -140,6 +144,16 @@
         "rangeController": {
             "prototype": "montage/core/range-controller"
         },
+        "text": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@flow:iteration.object.name"}
+            }
+        },
         "value": {
             "prototype": "digit/ui/text.reel",
             "properties": {
@@ -156,7 +170,7 @@
         <p data-montage-id="value" class="value"></p>
         <button data-montage-id="increment" class="increment"></button>
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
-            <div></div>
+            <p data-montage-id="text"></p>
         </div>
     </div>
 </body>
