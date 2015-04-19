@@ -2,7 +2,8 @@
  * @module ui/main.reel
  * @requires montage/ui/component
  */
-var Component = require("montage/ui/component").Component;
+var Component = require("montage/ui/component").Component,
+    RangeController = require("montage/core/range-controller").RangeController;
 
 /**
  * @class Main
@@ -19,6 +20,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 {index:3,name:"Cell 4"},
                 {index:4,name:"Cell 5"},
                 ];
+            this.rangeController = RangeController.
         }
     },
     handleIncrementAction: {
